@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <title>EMBOSS</title>
 </head>
-    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        font-family: 'Kanit', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    body {
+        background-color: #121212;
+        min-height: 100vh;
+        line-height: 4em;
+        transition: background .6s ease-in-out;
+    }
+
+    .logo__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        min-height: 100vh;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo__img {
+        max-width: 100%;
+    }
+
+    .logo__title {
+        font-size: 6em;
+        color: #f1f1f1;
+        font-weight: 200;
+        letter-spacing: .5em;
+        padding-left: .5em;
+
+    }
+
+    .logo__descriptions {
+        font-size: 2.5em;
+        color: #888;
+        font-weight: 200;
+        letter-spacing: .1em;
+        position: relative;
+        width: 100%;
+    }
+
+    .logo__descriptions p {
+        width: 100%;
+        margin: auto;
+    }
+
+</style>
+
 <body>
+
+    <section class="logo__container">
+        <div class="logo">
+            <img class="logo__img" src="logo.png" />
+            <h1 id="title" class="logo__title">emboss</h1>
+            <div class="logo__descriptions">
+                <p>en construcción</p>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
+
   
-<!-- modify this form HTML and place wherever you want your form -->
+<!-- modify this form HTML and place wherever you want your form 
 
 <form id="my-form" action="https://formspree.io/f/mbjqgrre" method="POST">
   <label>Email:</label>
@@ -18,7 +104,7 @@
   <p id="my-form-status"></p>
 </form>
 
-<!-- Place this script at the end of the body tag -->
+<!-- Place this script at the end of the body tag 
 
 <script>
     var form = document.getElementById("my-form");
