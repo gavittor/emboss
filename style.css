@@ -160,3 +160,7 @@ header .mirror {
 .contact_phone svg{
     margin-top: .1%;
 }
+.contact__lonk{
+    text-decoration:none;
+    color: inherit;
+}
